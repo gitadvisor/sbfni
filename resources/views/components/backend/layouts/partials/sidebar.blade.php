@@ -2,12 +2,32 @@
     <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
         <div class="sb-sidenav-menu">
             <div class="nav">
-                <div class="sb-sidenav-menu-heading">Core</div>
-                <a class="nav-link" href="index.html">
+                <div class="sb-sidenav-menu-heading">List</div>
+                <a class="nav-link" href="{{ route('admin.home') }}">
                     <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
-                    Dashboard
+                    Home
                 </a>
-                <div class="sb-sidenav-menu-heading">Interface</div>
+                <a class="nav-link" href="{{ route('notices.index') }}">
+                    <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                   Notice
+                </a>
+                <a class="nav-link" href="{{ route('events.index') }}">
+                    <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                    Events
+                </a>
+                <a class="nav-link" href="{{ route('news.index') }}">
+                    <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                    News
+                </a>
+                <a class="nav-link" href="{{ route('teachers.index') }}">
+                    <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                    Teachers
+                </a>
+                <a class="nav-link" href="{{ route('quotations.index') }}">
+                    <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                    Quotation
+                </a>
+
                 @can('user-management')
 
                 <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
@@ -29,13 +49,6 @@
                     </nav>
                 </div>
                 @endcan
-
-                <div class="sb-sidenav-menu-heading">Addons</div>
-
-                {{-- <a class="nav-link" href="{{ route('categories.index') }}">
-                    <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
-                    Categories
-                </a> --}}
 
             </div>
         </div>

@@ -1,0 +1,80 @@
+<x-frontend.layouts.master>
+<section class="section breadcrumb-modern context-dark parallax-container" data-parallax-img="images/parallax-03.jpg">
+            <div class="parallax-content section-30 section-sm-70">
+                <div class="shell">
+                    <h2 class="veil reveal-sm-block">About US</h2>
+                    <div class="offset-sm-top-35">
+                        <ul class="list-inline list-inline-lg list-inline-dashed p">
+                            <li><a href="index.html">Home</a></li>
+                            <li>About</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section novi-background bg-cover section-70 section-md-114 bg-default">
+            <div class="shell">
+                <div class="range range-50 text-sm-left range-sm-middle range-sm-justify">
+                    <div class="cell-sm-5 cell-md-4 cell-sm-push-2"><a href="index.html"><img class="img-responsive reveal-inline-block" src="images/events-04-420x420.jpg" alt=""></a></div>
+                    <div class="cell-sm-7 cell-md-7 cell-sm-push-1">
+                        <h3 class="text-bold">A Few Words <br class="veil reveal-lg-inline-block"> About the University</h3>
+                        <hr class="divider bg-madison hr-sm-left-0">
+                        <div class="offset-top-30 offset-md-top-30">
+                            <p>One of the world's premier academic and research institutions, the James Whitaker University has driven new ways of thinking since our 1876 founding. Today, JWU is an intellectual destination that draws inspired scholars to our Hyde Park and international campuses, keeping JWU at the nexus of ideas that challenge and change the world.</p>
+                        </div>
+                        <div class="offset-top-30"><a class="btn btn-icon btn-icon-right btn-default" href="history.html"><span class="icon fa-arrow-right"></span><span>Learn More</span></a></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section novi-background bg-cover bg-gray-darkest context-dark">
+            <div class="bg-vide novi-vide" data-vide-bg="video/bg-video-1-lg" data-vide-options="posterType: jpg">
+                <div class="bg-vide-content section-100 section-md-160">
+                    <div class="shell">
+                        <h2 class="text-bold">Trusted by Over 6000+ Students</h2>
+                        <div class="offset-top-30">
+                            <p>Join our community of students around the world helping you succeed.</p>
+                        </div>
+                        <div class="offset-top-35 offset-lg-top-70"><a class="btn btn-primary" href="#">Get Started</a></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section novi-background bg-cover section-70 section-md-114 bg-default">
+            <div class="shell">
+                <h2 class="text-bold">Our Skills</h2>
+                <hr class="divider bg-madison">
+                <div class="range range-50 range-xs-center offset-top-50 text-center">
+                    <div class="cell-sm-6 cell-md-3">
+                        <!-- Circle Progress bar-circle-->
+                        <div class="progress-bar-circle progress-bar-modern" data-value="1" data-gradient="#b80924" data-thickness="10" data-empty-fill="#e5e5e5" data-size="130"><span></span></div>
+                        <div class="offset-top-20">
+                            <h6 class="text-bold">Law</h6>
+                        </div>
+                    </div>
+                    <div class="cell-sm-6 cell-md-3">
+                        <!-- Circle Progress bar-circle-->
+                        <div class="progress-bar-circle progress-bar-modern" data-value="0.5" data-gradient="#b80924" data-thickness="10" data-empty-fill="#e5e5e5" data-size="130"><span></span></div>
+                        <div class="offset-top-20">
+                            <h6 class="text-bold">Mathematics</h6>
+                        </div>
+                    </div>
+                    <div class="cell-sm-6 cell-md-3">
+                        <!-- Circle Progress bar-circle-->
+                        <div class="progress-bar-circle progress-bar-modern" data-value="0.25" data-gradient="#b80924" data-thickness="10" data-empty-fill="#e5e5e5" data-size="130"><span></span></div>
+                        <div class="offset-top-20">
+                            <h6 class="text-bold">Physics</h6>
+                        </div>
+                    </div>
+                    <div class="cell-sm-6 cell-md-3">
+                        <!-- Circle Progress bar-circle-->
+                        <div class="progress-bar-circle progress-bar-modern" data-value="0.75" data-gradient="#b80924" data-thickness="10" data-empty-fill="#e5e5e5" data-size="130"><span></span></div>
+                        <div class="offset-top-20">
+                            <h6 class="text-bold">Computer Science</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <x-frontend.layouts.partials.quotation></x-frontend.layouts.partials.quotation>
+</x-frontend.layouts.master>

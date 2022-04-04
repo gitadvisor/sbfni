@@ -18,7 +18,7 @@ class UsersTableSeeder extends Seeder
     {
         User::create([
             'role_id' => 1,
-            'name' => 'Super Admin',
+            'name' => 'Santo',
             'email' => 'santo.botany@gmail.com',
             'email_verified_at' => now(),
             'password' => bcrypt('12345678'),
@@ -27,7 +27,7 @@ class UsersTableSeeder extends Seeder
 
         User::create([
             'role_id' => 1,
-            'name' => 'Admin',
+            'name' => 'Raian',
             'email' => 'raiansanil@gmail.com',
             'email_verified_at' => now(),
             'password' => bcrypt('12345678'),

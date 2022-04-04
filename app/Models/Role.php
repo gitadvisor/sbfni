@@ -8,12 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class Role extends Model
 {
     use HasFactory;
-     use HasFactory;
-
     protected $guarded = [];
     public function user()
     { //inverse relation
         return $this->hasMany(User::class);
     }
-
 }

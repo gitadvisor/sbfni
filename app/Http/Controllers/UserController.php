@@ -9,7 +9,6 @@ use Illuminate\Http\Request;
 
 class UserController extends Controller
 {
-
     public function index()
     {
 
@@ -27,13 +26,6 @@ class UserController extends Controller
         return view('backend.users.index', [
             'users' => $users,
             'roles' => $roles
-        ]);
-    }
-
-    public function show(User $user)
-    {
-        return view('backend.users.show', [
-            'user' => $user
         ]);
     }
 
@@ -72,37 +64,4 @@ class UserController extends Controller
             return redirect()->back()->withErrors($e->getMessage());
         }
     }
-
-    // Softdelete
-    public function trash()
-    {
-        $users = User::onlyTrashed()->get();
-
-        return view('backend.users.trashed', [
-            'users' => $users
-        ]);
-    }
-
-    public function restore($id)
-    {
-        $user = User::onlyTrashed()->findOrFail($id);
-        $user->restore();
-        return redirect()->route('users.trashed')->withMessage('Successfully Restored!');
-    }
-
-    public function delete($id)
-    {
-        $user = User::onlyTrashed()->findOrFail($id);
-        $user->forceDelete();
-        return redirect()->route('users.trashed')->withMessage('Successfully Deleted Permanently!');
-    }
-
-    // public function uploadImage($file)
-    // {        
-    //     $fileName = time().'.'.$file->getClientOriginalExtension();
-    //     Image::make($file)
-    //             ->resize(200, 200)
-    //             ->save(storage_path().'/app/public/images/'.$fileName);
-    //     return $fileName;
-    // }
 }

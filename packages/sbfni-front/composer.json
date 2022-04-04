@@ -1,0 +1,33 @@
+{
+            "name": "breakit/sbfnifront",
+            "type": "library",
+            "description": "",
+            "keywords": [
+                "Laravel"
+            ],
+            "authors": [
+                   {
+                    "name": "Pondit",
+                    "email": "info@pondit.com",
+                    "homepage": "www.pondit.com"
+                    }
+            ],
+            "autoload": {
+                "psr-4": {
+                    "Breakit\\Sbfni\\Sbfnifront\\": "src/"
+                }
+            },
+            "autoload-dev": {},
+           
+            "extra": {
+                "copyright": "www.pondit.com",
+                "laravel": {
+                    "providers": [
+                        "Breakit\\Sbfni\\Sbfnifront\\SbfnifrontServiceProvider"
+                    ],
+                    "aliases": {}
+                } 
+            },
+            "version":"1.0.0",
+            "license": "MIT"
+        }
