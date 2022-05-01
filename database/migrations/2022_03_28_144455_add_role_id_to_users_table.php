@@ -30,7 +30,7 @@ class AddRoleIdToUsersTable extends Migration
     {
         Schema::table('users', function (Blueprint $table) {
             $table->dropColumn('role_id');
-            
+            $table->dropForeign('users_role_id_foreign');
         });
     }
 }
