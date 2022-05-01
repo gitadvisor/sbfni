@@ -26,6 +26,8 @@
             <form action="{{ route('news.store') }}" enctype="multipart/form-data" method="post">
                 @csrf
 
+                <x-backend.form.input name="title" type="text"/>
+
                 <x-backend.form.input name="img1" type="file"/>
                 
                 <x-backend.form.textarea name="script1" />
@@ -45,6 +47,14 @@
                 <x-backend.form.input name="gl_img5" type="file"/>
 
                 <x-backend.form.input name="gl_img6" type="file"/>
+
+                <x-backend.form.input name="author" type="text"/>
+
+                <x-backend.form.textarea name="author_details" />
+
+                <x-backend.form.input name="author_img" type="file"/>
+
+
 
                 <x-backend.form.button>Save</x-backend.form.button>
             </form>

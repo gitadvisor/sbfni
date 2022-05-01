@@ -19,16 +19,16 @@
            News Details <a class="btn btn-sm btn-info" href="{{ route('news.index') }}">List</a>
         </div>
         <div class="card-body">
-                <p><h4>Image 1 : </h4><img src="{{ asset('storage/news/'.$news->img1) }}" alt="" widh4="100px"></p>
-                <p><h4>Script 1 : </h4>{{ $news->script1 }}</p>
-                <p><h4>Image 2 : </h4><img src="{{ asset('storage/news/'.$news->img2) }}" alt="" widh4="100px"></p>
-                <p><h4>Script 2 : </h4>{{ $news->script2 }}</p>
-                <p><h4>Gallary Image 1 : </h4><img src="{{ asset('storage/news/'.$news->gl_img1) }}" alt="" widh4="100px"></p>
-                <p><h4>Gallary Image 2 : </h4><img src="{{ asset('storage/news/'.$news->gl_img2) }}" alt="" widh4="100px"></p>
-                <p><h4>Gallary Image 3 : </h4><img src="{{ asset('storage/news/'.$news->gl_img3) }}" alt="" widh4="100px"></p>
-                <p><h4>Gallary Image 4 : </h4><img src="{{ asset('storage/news/'.$news->gl_img4) }}" alt="" widh4="100px"></p>
-                <p><h4>Gallary Image 5 : </h4><img src="{{ asset('storage/news/'.$news->gl_img5) }}" alt="" widh4="100px"></p>
-                <p><h4>Gallary Image 6 : </h4><img src="{{ asset('storage/news/'.$news->gl_img6) }}" alt="" widh4="100px"></p>
+                <p><h4>Image 1 : </h4><img src="{{ asset('storage/news/'.$show_news->img1) }}" alt="" widh4="100px"></p>
+                <p><h4>Script 1 : </h4>{{ $show_news->script1 }}</p>
+                <p><h4>Image 2 : </h4><img src="{{ asset('storage/news/'.$show_news->img2) }}" alt="" widh4="100px"></p>
+                <p><h4>Script 2 : </h4>{{ $show_news->script2 }}</p>
+                <p><h4>Gallary Image 1 : </h4><img src="{{ asset('storage/news/'.$show_news->gl_img1) }}" alt="" widh4="100px"></p>
+                <p><h4>Gallary Image 2 : </h4><img src="{{ asset('storage/news/'.$show_news->gl_img2) }}" alt="" widh4="100px"></p>
+                <p><h4>Gallary Image 3 : </h4><img src="{{ asset('storage/news/'.$show_news->gl_img3) }}" alt="" widh4="100px"></p>
+                <p><h4>Gallary Image 4 : </h4><img src="{{ asset('storage/news/'.$show_news->gl_img4) }}" alt="" widh4="100px"></p>
+                <p><h4>Gallary Image 5 : </h4><img src="{{ asset('storage/news/'.$show_news->gl_img5) }}" alt="" widh4="100px"></p>
+                <p><h4>Gallary Image 6 : </h4><img src="{{ asset('storage/news/'.$show_news->gl_img6) }}" alt="" widh4="100px"></p>
                     
 
         </div>

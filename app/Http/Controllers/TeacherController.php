@@ -46,6 +46,10 @@ class TeacherController extends Controller
                 'description' => $request->description,
                 'email' => $request->email,
                 'phone' => $request->phone,
+                'knowledge' => $request->knowledge,
+                'experience' => $request->experience,
+                'communication' => $request->communication,
+                'leadership' => $request->leadership,
                 'img' => $this->uploadimg(request()->file('img')),
             ]);
 
@@ -79,6 +83,10 @@ class TeacherController extends Controller
                 'description' => $request->description,
                 'email' => $request->email,
                 'phone' => $request->phone,
+                'knowledge' => $request->knowledge,
+                'experience' => $request->experience,
+                'communication' => $request->communication,
+                'leadership' => $request->leadership,
             ];
 
             if ($request->hasFile('img')) {
@@ -117,12 +125,20 @@ class TeacherController extends Controller
         ]);
     }
 
-    public function restore($id)
+    // public function restore($id)
+    // {
+    //     $teacher = Teacher::onlyTrashed()->findOrFail($id);
+    //     $teacher->restore();
+    //     return redirect()->route('teachers.trashed')->withMessage('Successfully Restored!');
+    // }
+
+        public function restore($teacher)
     {
-        $teacher = Teacher::onlyTrashed()->findOrFail($id);
+        $teacher = Teacher::onlyTrashed()->findOrFail($teacher);
         $teacher->restore();
         return redirect()->route('teachers.trashed')->withMessage('Successfully Restored!');
     }
+
 
     public function delete($id)
     {

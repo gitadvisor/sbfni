@@ -19,12 +19,12 @@
            Quotation Details <a class="btn btn-sm btn-info" href="{{ route('quotations.index') }}">List</a>
         </div>
         <div class="card-body">
-            <h3>Title: {{ $quotation->title }}</h3>
+            <h3>Title: {{ $quotation->first()->title }}</h3>
             <p>
-                <img src="{{ asset('storage/quotations/'.$quotation->img) }}" alt="{{ $quotation->title }}" width="100px" height="100px">
+                <img src="{{ asset('storage/quotations/'.$quotation->first()->img) }}" alt="{{ $quotation->first()->title }}" width="100px" height="100px">
             </p>
-            <p>Quotation: {{ $quotation->quotation }}</p>
-            <p>Author: {{ $quotation->author_name }}</p>
+            <p>Quotation: {{ $quotation->first()->quotation }}</p>
+            <p>Author: {{ $quotation->first()->author_name }}</p>
 
         </div>
     </div>

@@ -30,34 +30,42 @@
             </div>
             @endif
 
-            <form action="{{ route('news.update', ['news' => $news->id]) }}" method="post" enctype="multipart/form-data">
+            <form action="{{ route('news.update', ['news' => $single_news->id]) }}" method="post" enctype="multipart/form-data">
                 @csrf
-                @method('patch')
+                @method('put')
 
-                <x-backend.form.input name="img1" type="file" :value="$news->img1"/>
+                <x-backend.form.input name="title" type="text" :value="$single_news->title"/>
+
+                <x-backend.form.input name="img1" type="file" :value="$single_news->img1"/>
 
                 <x-backend.form.textarea name="script1" >
-                    {{ $news->script1 }}
+                    {{ $single_news->script1 }}
                 </x-backend.form.textarea>
 
-                <x-backend.form.input name="img2" type="file" :value="$news->img2"/>
+                <x-backend.form.input name="img2" type="file" :value="$single_news->img2"/>
 
                 <x-backend.form.textarea name="script2" >
-                    {{ $news->script1 }}
+                    {{ $single_news->script1 }}
                 </x-backend.form.textarea>
 
 
-                <x-backend.form.input name="gl_img1" type="file" :value="$news->gl_img1"/>
+                <x-backend.form.input name="gl_img1" type="file" :value="$single_news->gl_img1"/>
 
-                <x-backend.form.input name="gl_img2" type="file" :value="$news->gl_img2"/>
+                <x-backend.form.input name="gl_img2" type="file" :value="$single_news->gl_img2"/>
 
-                <x-backend.form.input name="gl_img3" type="file" :value="$news->gl_img3"/>
+                <x-backend.form.input name="gl_img3" type="file" :value="$single_news->gl_img3"/>
 
-                <x-backend.form.input name="gl_img4" type="file" :value="$news->gl_img4"/>
+                <x-backend.form.input name="gl_img4" type="file" :value="$single_news->gl_img4"/>
 
-                <x-backend.form.input name="gl_img5" type="file" :value="$news->gl_img5"/>
+                <x-backend.form.input name="gl_img5" type="file" :value="$single_news->gl_img5"/>
 
-                <x-backend.form.input name="gl_img6" type="file" :value="$news->gl_img6"/>
+                <x-backend.form.input name="gl_img6" type="file" :value="$single_news->gl_img6"/>
+
+                <x-backend.form.input name="author" type="text" :value="$single_news->author"/>
+
+                <x-backend.form.textarea name="author_details" :value="$single_news->author_details"/>
+
+                <x-backend.form.input name="author_img" type="file" :value="$single_news->author_img"/>
                 
                 <x-backend.form.button>Update</x-backend.form.button>
 

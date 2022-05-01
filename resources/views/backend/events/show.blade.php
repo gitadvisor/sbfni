@@ -28,6 +28,7 @@
                 <p>Date :  <h3>{{ $events->date }}</h3></p>
                 <p>Time : <h3>{{ $events->time }}</h3></p>
                 <p>Fee : <h3>{{ $events->fee }}</h3></p>
+                <p>Month : <h3>{{ $events->month }}</h3></p>
                 <p>Location : <h3>{{ $events->location }}</h3></p>
                 <p>Bring : <h3>{{ $events->bring }}</h3></p>
                 <p>Lecturer Name : <h3>{{ $events->lecturer_name }}</h3></p>

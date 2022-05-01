@@ -26,6 +26,9 @@
             <form action="{{ route('events.store') }}" enctype="multipart/form-data" method="post">
                 @csrf
 
+
+                <x-backend.form.input name="title" type="text"/>
+
                 <x-backend.form.input name="img1" type="file"/>
                 
                 <x-backend.form.textarea name="description" />

@@ -41,6 +41,10 @@
                 </x-backend.form.textarea>"
                 <x-backend.form.input name="email" :value="$teacher->email"/>
                 <x-backend.form.input name="phone" :value="$teacher->phone"/>
+                <x-backend.form.input name="knowledge" :value="$teacher->knowledge"/> 
+                <x-backend.form.input name="experience" :value="$teacher->experience"/> 
+                <x-backend.form.input name="communication" :value="$teacher->communication"/> 
+                <x-backend.form.input name="leadership" :value="$teacher->leadership"/> 
                 <x-backend.form.input name="img" type="file" :value="$teacher->img"/>
 
                 <x-backend.form.button>Update</x-backend.form.button>

@@ -28,16 +28,16 @@
                         </div>
                     </div>
                 </div>
-                <div class="rd-navbar-menu-wrap clearfix">
-                    <div class="rd-navbar-nav-wrap">
+                <div class="rd-navbar-menu-wrap clearfix bg-warning" >
+                    <div class="rd-navbar-nav-wrap ">
                         <div class="rd-navbar-mobile-scroll">
                             <div class="rd-navbar-mobile-header-wrap">
                                 <div class="rd-navbar-mobile-brand"><a href="{{ route('home') }}"><img src="{{ asset('ui/frontend/images/logo-default-2-144x122-1.png') }}" alt="" srcset="images/logo-default-2-144x122-1.png 2x"></a></div>
                             </div>
-                            <ul class="rd-navbar-nav">
-                                <li><a href="{{ route('home') }}">Home</a></li>
+                            <ul class="rd-navbar-nav ">
+                                <li ><a href="{{ route('home') }}">Home</a></li>
                                 <li><a href="{{ route('about') }}">About</a>
-                                    <ul class="rd-navbar-dropdown">
+                                    <ul class="rd-navbar-dropdown ">
                                         <li><a href="{{ route('history') }}">History</a></li>
                                     </ul>
                                 </li>
@@ -55,6 +55,12 @@
                                     </ul>
                                 </li>
                                 <li><a href="{{ route('home_notices') }}">Notice</a>
+                                </li>
+
+                                <li><a href="{{ route('news') }}">News</a>
+                                </li>
+
+                                <li><a href="{{ route('events') }}">Events</a>
                                 </li>
 
                                 <li><a href="{{ route('contact') }}">Contacts</a></li>

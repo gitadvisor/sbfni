@@ -25,7 +25,7 @@
             <main>
                 <div class="container-fluid px-4">
 
-                    {{ $breadCrumb }}
+                    {{ $breadCrumb ?? " " }}
 
                     {{ $slot }}
                 </div>

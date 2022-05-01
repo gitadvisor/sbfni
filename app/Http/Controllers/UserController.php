@@ -13,7 +13,11 @@ class UserController extends Controller
     {
 
         $usersCollection = User::latest();
-        $roles = Role::latest()->get();
+
+        if (request()->has('role_id')) {
+            $usersCollection = $usersCollection
+                ->where('role_id', request('role_id'));
+        }
 
         if (request('search')) {
             $usersCollection = $usersCollection
@@ -22,6 +26,8 @@ class UserController extends Controller
         }
 
         $users = $usersCollection->paginate(10);
+        // dd($users);
+        $roles = Role::all();
 
         return view('backend.users.index', [
             'users' => $users,
@@ -32,7 +38,7 @@ class UserController extends Controller
     public function edit(User $user)
     {
         $roles = Role::latest()->get();
-        return view('backend.users.edit-role', [
+        return view('backend.users.edit', [
             'user' => $user,
             'roles' => $roles
         ]);
@@ -43,11 +49,12 @@ class UserController extends Controller
         try {
 
             $requestData = [
-                'name' => $request->name,
+                // 'name' => $request->name,
                 'role_id' => $request->role_id
             ];
 
             $user->update($requestData);
+
 
             return redirect()->route('users.index')->withMessage('Successfully Updated!');
         } catch (QueryException $e) {

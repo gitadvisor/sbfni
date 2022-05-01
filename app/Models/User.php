@@ -17,11 +17,14 @@ class User extends Authenticatable
      *
      * @var array<int, string>
      */
-    protected $fillable = [
-        'name',
-        'email',
-        'password',
-    ];
+    // protected $fillable = [
+    //     'name',
+    //     'email',
+    //     'password',
+    //      'role_id',
+    // ];
+
+    protected $guarded = [];
 
     /**
      * The attributes that should be hidden for serialization.
@@ -45,5 +48,10 @@ class User extends Authenticatable
     public function role()
     { //inverse relation
         return $this->belongsTo(Role::class);
+    }
+
+    public function profile()
+    { //inverse relation
+        return $this->hasOne(Profile::class);
     }
 }

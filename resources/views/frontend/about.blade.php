@@ -17,12 +17,13 @@
                 <div class="range range-50 text-sm-left range-sm-middle range-sm-justify">
                     <div class="cell-sm-5 cell-md-4 cell-sm-push-2"><a href="index.html"><img class="img-responsive reveal-inline-block" src="images/events-04-420x420.jpg" alt=""></a></div>
                     <div class="cell-sm-7 cell-md-7 cell-sm-push-1">
-                        <h3 class="text-bold">A Few Words <br class="veil reveal-lg-inline-block"> About the University</h3>
+                        <h3 class="text-bold">A Few Words <br class="veil reveal-lg-inline-block"> About the SBF Nursing Institute</h3>
                         <hr class="divider bg-madison hr-sm-left-0">
                         <div class="offset-top-30 offset-md-top-30">
-                            <p>One of the world's premier academic and research institutions, the James Whitaker University has driven new ways of thinking since our 1876 founding. Today, JWU is an intellectual destination that draws inspired scholars to our Hyde Park and international campuses, keeping JWU at the nexus of ideas that challenge and change the world.</p>
+                            <p>At present, the value of nursing or vocational education is much higher than that of general education. It is easier for a student to get a job after passing the Nursing Diploma.
+                                The SBF Nursing Institute is an excellent educational institution and is run by an educated and experienced faculty. Well-equipped library, 6 practical labs, computer lab, well-equipped hostel for students, dining is located in a beautiful environment.</p>
                         </div>
-                        <div class="offset-top-30"><a class="btn btn-icon btn-icon-right btn-default" href="history.html"><span class="icon fa-arrow-right"></span><span>Learn More</span></a></div>
+                        <div class="offset-top-30"><a class="btn btn-icon btn-icon-right btn-default" href="{{ route('history') }}"><span class="icon fa-arrow-right"></span><span>Learn More</span></a></div>
                     </div>
                 </div>
             </div>
@@ -31,7 +32,7 @@
             <div class="bg-vide novi-vide" data-vide-bg="video/bg-video-1-lg" data-vide-options="posterType: jpg">
                 <div class="bg-vide-content section-100 section-md-160">
                     <div class="shell">
-                        <h2 class="text-bold">Trusted by Over 6000+ Students</h2>
+                        <h2 class="text-bold">Trusted by Over 600+ Students</h2>
                         <div class="offset-top-30">
                             <p>Join our community of students around the world helping you succeed.</p>
                         </div>
@@ -47,30 +48,30 @@
                 <div class="range range-50 range-xs-center offset-top-50 text-center">
                     <div class="cell-sm-6 cell-md-3">
                         <!-- Circle Progress bar-circle-->
-                        <div class="progress-bar-circle progress-bar-modern" data-value="1" data-gradient="#b80924" data-thickness="10" data-empty-fill="#e5e5e5" data-size="130"><span></span></div>
+                        <div class="progress-bar-circle progress-bar-modern" data-value="0.98" data-gradient="#b80924" data-thickness="10" data-empty-fill="#e5e5e5" data-size="130"><span></span></div>
                         <div class="offset-top-20">
-                            <h6 class="text-bold">Law</h6>
+                            <h6 class="text-bold">Lab</h6>
                         </div>
                     </div>
                     <div class="cell-sm-6 cell-md-3">
                         <!-- Circle Progress bar-circle-->
-                        <div class="progress-bar-circle progress-bar-modern" data-value="0.5" data-gradient="#b80924" data-thickness="10" data-empty-fill="#e5e5e5" data-size="130"><span></span></div>
+                        <div class="progress-bar-circle progress-bar-modern" data-value="0.9" data-gradient="#b80924" data-thickness="10" data-empty-fill="#e5e5e5" data-size="130"><span></span></div>
                         <div class="offset-top-20">
-                            <h6 class="text-bold">Mathematics</h6>
+                            <h6 class="text-bold">Teachers</h6>
                         </div>
                     </div>
                     <div class="cell-sm-6 cell-md-3">
                         <!-- Circle Progress bar-circle-->
-                        <div class="progress-bar-circle progress-bar-modern" data-value="0.25" data-gradient="#b80924" data-thickness="10" data-empty-fill="#e5e5e5" data-size="130"><span></span></div>
+                        <div class="progress-bar-circle progress-bar-modern" data-value="0.78" data-gradient="#b80924" data-thickness="10" data-empty-fill="#e5e5e5" data-size="130"><span></span></div>
                         <div class="offset-top-20">
-                            <h6 class="text-bold">Physics</h6>
+                            <h6 class="text-bold">Campus</h6>
                         </div>
                     </div>
                     <div class="cell-sm-6 cell-md-3">
                         <!-- Circle Progress bar-circle-->
-                        <div class="progress-bar-circle progress-bar-modern" data-value="0.75" data-gradient="#b80924" data-thickness="10" data-empty-fill="#e5e5e5" data-size="130"><span></span></div>
+                        <div class="progress-bar-circle progress-bar-modern" data-value="0.95" data-gradient="#b80924" data-thickness="10" data-empty-fill="#e5e5e5" data-size="130"><span></span></div>
                         <div class="offset-top-20">
-                            <h6 class="text-bold">Computer Science</h6>
+                            <h6 class="text-bold">Library</h6>
                         </div>
                     </div>
                 </div>

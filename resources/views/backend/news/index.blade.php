@@ -13,7 +13,7 @@
         </x-backend.layouts.elements.breadcrumb>
     </x-slot>
 
-    <div class="card mb-4">
+    <div class="card mb-4" style="width:fit-content">
         <div class="card-header">
             <i class="fas fa-table me-1"></i>
             News
@@ -37,17 +37,11 @@
                 <thead>
                     <tr>
                         <th>Sl#</th>
-                        <th>Image 1</th>
-                        <th>Script 1</th>
-                        <th>Image 2</th>
-                        <th>Script 2</th>
-                        <th>Gallary Image 1</th>
-                        <th>Gallary Image 2</th>
-                        <th>Gallary Image 3</th>
-                        <th>Gallary Image 4</th>
-                        <th>Gallary Image 5</th>
-                        <th>Gallary Image 6</th>
-                        <th>Action</th>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>Author Details</th>
+                        <th>Author Image</th>
+                       
                     </tr>
                 </thead>
                 <tbody>
@@ -55,32 +49,16 @@
                     @foreach ($news as $news)
                     <tr>
                         <td>{{ ++$sl }}</td>
+                       
+                        <td>{{ $news->title }}</td>
+                        
+                        <td>{{ $news->author }}</td>
+
+                        <td>{{ $news->author_details }}</td>
+                        
                         <td>
-                            <img src="{{ asset('storage/news/'.$news->img1) }}" alt="" width="100px">
-                        </td>
-                        <td>{{ $news->script1 }}</td>
-                        <td>
-                            <img src="{{ asset('storage/news/'.$news->img2) }}" alt="" width="100px">
-                        </td>
-                        <td>{{ $news->script2 }}</td>
-                        <td>
-                            <img src="{{ asset('storage/news/'.$news->gl_img1) }}" alt="" width="100px">
-                        </td>
-                        <td>
-                            <img src="{{ asset('storage/news/'.$news->gl_img2) }}" alt="" width="100px">
-                        </td>
-                        <td>
-                            <img src="{{ asset('storage/news/'.$news->gl_img3) }}" alt="" width="100px">
-                        </td>
-                        <td>
-                            <img src="{{ asset('storage/news/'.$news->gl_img4) }}" alt="" width="100px">
-                        </td>
-                        <td>
-                            <img src="{{ asset('storage/news/'.$news->gl_img5) }}" alt="" width="100px">
-                        </td>
-                        <td>
-                            <img src="{{ asset('storage/news/'.$news->gl_img6) }}" alt="" width="100px">
-                        </td>
+                            <img src="{{ asset('storage/news/'.$news->author_img) }}" alt="" width="100px">
+                        </td>                        
                         
                         <td>
                             <a class="btn btn-info btn-sm" href="{{ route('news.show', ['news' => $news->id]) }}">Show</a>

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Event;
 use Exception;
+use Carbon\Carbon;
 use Illuminate\Database\QueryException;
 use Illuminate\Http\Request;
 use Image;
@@ -54,6 +55,7 @@ class EventController extends Controller
                 'lecturer_email' => $request->lecturer_email,
                 'lecturer_img'  => $this->uploadimg2(request()->file('lecturer_img')),
                 'lecturer_description' => $request->lecturer_description,
+                'title' => $request->title,
             ]);
 
             return redirect()->route('events.index')->withMessage('Successfully Created!');
@@ -92,6 +94,7 @@ class EventController extends Controller
                 'lecturer_email' => $request->lecturer_email,
                 // 'lecturer_img'  => $this->uploadimg(request()->file('lecturer_img')),
                 'lecturer_description' => $request->lecturer_description,
+                'title' => $request->title,
             ];
             if (request()->file('img1')) {
                 $requestData['img1'] = $this->uploadimg(request()->file('img1'));

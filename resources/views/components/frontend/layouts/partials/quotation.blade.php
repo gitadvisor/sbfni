@@ -10,32 +10,36 @@
   >
     <div>
       <div class="shell">
+         @forelse ($quotation as $quotation )
         <div class="range range-xs-center range-xs-middle">
+         
           <div class="cell-sm-9 cell-sm-push-1">
+            
+            
             <div class="quote-classic-boxed text-center">
               <div class="quote-body">
                 <q
-                  >When you work full-time while studying, you need to
-                  sacrifice personal time, which meant that I took my
-                  studies seriously. My ambition was not only to complete
-                  my degree successfully but to make the best out of the
-                  time spent studying.</q
+                  >{{ $quotation->quotation }}</q
                 >
                 <div class="offset-top-30 text-center">
-                  <cite class="font-accent">Debra Banks</cite>
+                  <cite class="font-accent">{{ $quotation->author_name }}</cite>
                   <div class="offset-top-5">
                     <p class="text-dark text-italic">
-                      Diploma for Graduates in Art, USA
+                      {{ $quotation->title }}
                     </p>
                   </div>
                 </div>
               </div>
             </div>
+              
+            
           </div>
         </div>
       </div>
-    </div>
-    <div>
+    </div>@empty
+              <p> No Qutation Found </p>
+            @endforelse
+    {{-- <div>
       <div class="shell">
         <div class="range range-xs-center range-xs-middle">
           <div class="cell-sm-9 cell-sm-push-1">
@@ -61,6 +65,6 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> --}}
   </div>
 </section>

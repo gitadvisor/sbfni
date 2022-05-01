@@ -1,30 +1,67 @@
 <x-frontend.layouts.master>
-<section class="section breadcrumb-modern context-dark parallax-container" data-parallax-img="images/parallax-03.jpg">
+<section class="section breadcrumb-modern context-dark parallax-container" data-parallax-img="{{ asset('ui/frontend/images/parallax-03.jpg') }}">
             <div class="parallax-content section-30 section-sm-70">
                 <div class="shell">
-                    <h2 class="veil reveal-sm-block"> Our Lecturer </h2>
+                    <h2 class="veil reveal-sm-block">Teacher</h2>
                     <div class="offset-sm-top-35">
                         <ul class="list-inline list-inline-lg list-inline-dashed p">
-                            <li><a href="index.html">Home</a></li>
+                            <li><a href="{{ route('home') }}">Home</a></li>
                             <li>Team&nbsp;</li>
                         </ul>
                     </div>
                 </div>
             </div>
         </section>
+        {{--<section class="section novi-background bg-cover section-70 section-md-114 bg-default">
+            <div class="shell">
+                <h2 class="text-bold">Our Respected Teachers</h2>
+                <hr class="divider bg-madison">
+                @forelse ($teachers as $teacher)
+
+                <div class="range range-30 text-md-left offset-top-60">
+                    <div class="cell-sm-6 cell-md-3"><img class="img-responsive reveal-inline-block img-rounded" src="{{ asset('storage/teachers/'.$teacher->img) }}" alt="{{$teacher->name }}" width="270" height="270">
+                        <div class="offset-top-20">
+                            <h6 class="text-bold text-primary">
+                                <a href="{{ route('home_teacher_details', ['teacher' =>$teacher->id]) }}">{{$teacher->name }}</a>
+                                   
+                        </div>
+                        <div class="offset-top-5 text-bold text-secondary">
+                            <p > Designation: {{$teacher->designation }}</p>
+                        </div>
+                        <div class="offset-top-5 text-bold text-secondary">
+                            <p>Qualification:  {{$teacher->qualification }}</p>
+                        </div>
+                        <div class="offset-top-5 text-bold text-secondary">
+                            <p>E-mail: {{$teacher->email }}</p>
+                        </div>
+                        <div class="offset-top-5 text-bold text-secondary">
+                            <p>Phone: {{$teacher->phone }}</p>
+                        </div>
+                    </div>  
+                     @empty
+                    <p>No Teacher Found</p>
+                    @endforelse                   
+                </div>
+            </div>
+        </section>--}}
+
         <section class="section novi-background bg-cover section-70 section-md-114 bg-default">
             <div class="shell">
-                <h2 class="text-bold"> Our Lecturer </h2>
+                <h2 class="text-bold">Our Respected Teachers</h2>
                 <hr class="divider bg-madison">
                 <div class="range range-30 text-md-left offset-top-60">
-                    <div class="cell-sm-6 cell-md-3"><img class="img-responsive reveal-inline-block img-rounded" src="images/users/user-kathy-gibson-270x270.jpg" width="270" height="270" alt="">
+                    @forelse($teachers as $teacher)
+                    <div class="cell-sm-8 cell-md-4"><img class="img-responsive reveal-inline-block img-rounded" src="{{ asset('storage/teachers/'.$teacher->img) }}" width="270" height="270" alt="">
                         <div class="offset-top-20">
-                            <h6 class="text-bold text-primary"><a href="{{ route('home_teacher_details', ['id'=>1]) }}">Kathy Gibson</a></h6>
+                            <h6 class="text-bold text-primary"><a href="{{ route('home_teacher_details', ['teacher' =>$teacher->id]) }}">{{ $teacher->name }}</a></h6>
                         </div>
                         <div class="offset-top-5">
-                            <p>Psychology</p>
+                            <p>{{$teacher->designation }}</p>
                         </div>
-                    </div>                    
+                    </div>
+                    @empty
+                    <p>No teachers found</p>
+                    @endforelse                    
                 </div>
             </div>
         </section>

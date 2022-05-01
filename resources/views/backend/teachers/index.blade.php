@@ -38,7 +38,6 @@
                     <tr>
                         <th>Sl#</th>
                         <th>Name</th>
-                        <th>Designation</th>
                         <th>Qualification</th>
                         <th>Description</th>
                         <th>Email</th>
@@ -55,7 +54,6 @@
                         <td>{{$teacher->name }}</td>
                         <td>{{$teacher->designation }}</td>
                         <td>{{$teacher->qualification }}</td>
-                        <td>{{$teacher->description }}</td>
                         <td>{{$teacher->email }}</td>
                         <td>{{$teacher->phone }}</td>
                         <td>
@@ -82,7 +80,7 @@
 
                 </tbody>
             </table>
-            {{ $teachers->links() }}
+            {{--{{ $teachers->links() }}--}}
         </div>
     </div>
 

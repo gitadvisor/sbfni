@@ -30,18 +30,18 @@
             </div>
             @endif
 
-            <form action="{{ route('notices.update', ['notice' => $notice->id]) }}" method="post" enctype="multipart/form-data">
+            <form action="{{ route('notices.update', ['notice' => $notice->first()->id]) }}" method="post" enctype="multipart/form-data">
                 @csrf
-                @method('patch')
+                @method('put')
 
-                <x-backend.form.input name="title" :value="$notice->title" /> 
+                <x-backend.form.input name="title" :value="$notice->first()->title" /> 
                     
-                <x-backend.form.input name="date" type="date" :value="$notice->date" /> 
+                <x-backend.form.input name="date" type="date" :value="$notice->first()->date" /> 
 
-        	    <x-backend.form.input name="pdf" type="file" :value="$notice->image"/>  
+        	    <x-backend.form.input name="pdf" type="file" :value="$notice->first()->image"/>  
 
                 <x-backend.form.textarea name="subject">
-                {{ $notice->subject }}
+                {{ $notice->first()->subject }}
                 </x-backend.form.textarea>
 
                 <x-backend.form.button>Update</x-backend.form.button>

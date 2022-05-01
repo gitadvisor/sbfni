@@ -16,21 +16,25 @@
             <div class="shell">
                 <div class="range range-50">
                     <div class="cell-sm-4 cell-sm-push-2 text-sm-left">
-                        <div class="inset-sm-left-30"><img class="img-responsive reveal-inline-block img-rounded" src="images/users/user-christopher-smith-340x300.jpg" width="340" height="300" alt="">
+                        <div class="inset-sm-left-30"><img class="img-responsive reveal-inline-block img-rounded" src="{{ asset('ui/frontend/images/SBF_p.jpeg') }}" width="340" height="300" alt="">
                             <div class="offset-top-20">
-                                <h6 class="text-primary text-bold">Christopher Smith</h6>
+                                <h6 class="text-primary text-bold">Abu Hena M. Kamal, Ph.D</h6>
                             </div>
-                            <p>First president of the James Whitaker University, served from 1876 to 1897.</p>
+                            <p>President of the Sonar Bangla Foundation.</p>
                         </div>
                     </div>
                     <div class="cell-sm-8 cell-sm-push-1 text-sm-left">
                         <h2 class="text-bold">A Meeting of Minds</h2>
                         <hr class="divider bg-madison hr-sm-left-0">
                         <div class="offset-top-30 offset-sm-top-30">
-                            <p>The original board of trustees laid the groundwork for what would become today's James Whitaker University on July 9, 1876, when the group gathered to hold the University's inaugural board meeting and drafted the University's articles of incorporation. This guiding document outlined elements the founders believed would build an enduring legacy for the University: a commitment to offering a rigorous academic program and an ambition to provide "opportunities for all departments of higher education to persons of both sexes on equal terms." On September 10, 1876, the State of California issued the University's official certificate of incorporation, marking the formal beginning of the University's life.</p>
+                            <p>SBF Nursing Institute, Lalmonirhat is calling upon you to make a valuable contribution to the society by educating your son / daughter in nursing education and establishing it in life.
+                                Sonar Bangla Foundation-USA was born out of gratitude and love for the country of some dedicated people living in America with the conviction of building a poverty-free Bangladesh, quality health care, education and a prosperous country. Its country office in Bangladesh is registered with the Sonar Bangla Foundation-Bangladesh NGO Affairs Bureau and is working towards the goal of the foundation.
+                                Function
+                                The Sonar Bangla Foundation is working tirelessly to bring quality education services to the doorsteps of people in remote areas of the country, including low cost kidney dialysis services, kidney disease prevention and awareness programs. In the meantime, SBF Research and Development Center is being set up at 20 Kidney Dialysis Centers in different districts of Bangladesh, Bangabandhu Hitech Park, Kalyakair A Kidney Dialysis Machine for addition, repair and maintenance and SBF Nursing Ins in Lalmonirhat District.
+                                </p>
                         </div>
-                        <p>An initial pledge of $600,000 (roughly $16 million in today's currency) from oil magnate James Whitaker, along with contributions by the American Baptist Education Society, helped to found the University. The University's land was donated by Marshall Field, owner of the historic Chicago department store that bore his name.</p>
-                        <p>Christopher Smith, the University's first president, envisioned a university that was "bran splinter new, yet as solid as the ancient hills" - a modern research university..</p>
+                        <p><strong> Why is SBF Nursing Institute, Lalmonirhat calling you / your children for nursing education? </strong><br>
+                            Diploma in Nursing Science and Midwifery is a 3-year diploma course. If you pass HSC and equivalent course from any group and pass the admission test conducted by Bangladesh Nursing and Midwifery Council, you can be admitted here. Life here is built on very low cost and quality nursing education.</p>
                     </div>
                 </div>
             </div>
@@ -38,12 +42,12 @@
         <section class="section novi-background bg-cover section-1 bg-default-2">
             <div class="shell-wide">
                 <div class="range range-30">
-                    <div class="cell-sm-4"><img class="img-responsive reveal-inline-block" src="images/history-01-570x370.jpg" width="570" height="370" alt=""></div>
-                    <div class="cell-sm-4"><img class="img-responsive reveal-inline-block" src="images/history-02-570x370.jpg" width="570" height="370" alt=""></div>
-                    <div class="cell-sm-4"><img class="img-responsive reveal-inline-block" src="images/history-03-570x370.jpg" width="570" height="370" alt=""></div>
-                    <div class="cell-sm-4"><img class="img-responsive reveal-inline-block" src="images/history-04-570x370.jpg" width="570" height="370" alt=""></div>
-                    <div class="cell-sm-4"><img class="img-responsive reveal-inline-block" src="images/history-05-570x370.jpg" width="570" height="370" alt=""></div>
-                    <div class="cell-sm-4"><img class="img-responsive reveal-inline-block" src="images/history-06-570x370.jpg" width="570" height="370" alt=""></div>
+                    <div class="cell-sm-4"><img class="img-responsive reveal-inline-block" src="{{ asset('ui/frontend/images/history/gate.jpg') }}" style="height: 270px; width:570px" alt=""></div>
+                    <div class="cell-sm-4"><img class="img-responsive reveal-inline-block" src="{{ asset('ui/frontend/images/history/building.jpg') }}" style="height: 270px; width:570px" alt=""></div>
+                    <div class="cell-sm-4"><img class="img-responsive reveal-inline-block" src="{{ asset('ui/frontend/images/history/lab.jpg') }}" style="height: 270px; width:570px" alt=""></div>
+                    <div class="cell-sm-4"><img class="img-responsive reveal-inline-block" src="{{ asset('ui/frontend/images/history/library.JPG') }}" style="height: 270px; width:570px" alt=""></div>
+                    <div class="cell-sm-4"><img class="img-responsive reveal-inline-block" src="{{ asset('ui/frontend/images/history/program.jpg') }}" style="height: 270px; width:570px" alt=""></div>
+                    <div class="cell-sm-4"><img class="img-responsive reveal-inline-block" src="{{ asset('ui/frontend/images/history/students.jpg') }}" style="height: 270px; width:570px" alt=""></div>
                 </div>
             </div>
         </section>

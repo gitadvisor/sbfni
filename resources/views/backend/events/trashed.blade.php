@@ -36,6 +36,7 @@
                         <th>Date</th>
                         <th>Time</th>
                         <th>Fee</th>
+                        <th>Month</th>
                         <th>Location</th>
                         <th>Bring</th>
                         <th>Lecturer Name</th>
@@ -63,6 +64,8 @@
                         <td>{{ $events->time }}</td>
 
                         <td>{{ $events->fee }}</td>
+
+                        <td>{{ $events->month }}</td>
 
                         <td>{{ $events->location }}</td>
 

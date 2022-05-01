@@ -29,9 +29,18 @@ class AuthServiceProvider extends ServiceProvider
 
         // Gate::define('create-notice', [NoticePolicy::class, 'create']);
 
-        Gate::define('user-management', function (User $user) {
+        Gate::define('admin', function (User $user) {
 
             if ($user->role_id == 1) {
+                return true;
+            }
+
+            return false;
+        });
+
+        Gate::define('student', function (User $user) {
+
+            if ($user->role_id == 3) {
                 return true;
             }
 

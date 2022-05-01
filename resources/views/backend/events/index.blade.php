@@ -13,7 +13,7 @@
         </x-backend.layouts.elements.breadcrumb>
     </x-slot>
 
-    <div class="card mb-4">
+    <div class="card" style="width:fit-content" >
         <div class="card-header">
             <i class="fas fa-table me-1"></i>
             Events
@@ -24,7 +24,7 @@
             {{-- @endcan --}}
 
         </div>
-        <div class="card-body">
+        <div class="card-body " >
 
             <x-backend.layouts.elements.message :message="session('message')" />
 
@@ -33,66 +33,43 @@
                 <x-backend.form.input style="width: 200px;" name='search' />
 
             </form>
-            <table class="table">
+            <table class="table ">
                 <thead>
                     <tr>
                         <th>Sl#</th>
+                        <th>Title</th>
                         <th>Image</th>
-                        <th>Description</th>
+                        <th>What to Bring</th>
                         <th>Date</th>
-                        <th>Time</th>
-                        <th>Fee</th>
-                        <th>Location</th>
-                        <th>Bring</th>
                         <th>Lecturer Name</th>
-                        <th>Lecturer Phone</th>
-                        <th>Lecturer Email</th>
-                        <th>Lecturer Image</th>
-                        <th>Lecturer Description</th>
                         <th>Action</th>
                     </tr>
                 </thead>
                 <tbody>
                     @php $sl=0 @endphp
-                    @foreach ($events as $events)
+                    @foreach ($events as $event)
                     <tr>
                         <td>{{ ++$sl }}</td>
 
+                        <td>{{ $event->title }}</td>
+
                         <td>
-                            <img src="{{ asset('storage/events/'.$events->img1) }}" alt="{{ $events->img1 }}" width="100px" height="100px">
+                            <img src="{{ asset('storage/events/'.$event->img1) }}" alt="{{ $event->img1 }}" width="100px" height="100px">
                         </td>
 
-                        <td>{{ $events->description }}</td>
+                        <td>{{ $event->bring }}</td>
 
-                        <td>{{ $events->date }}</td>
 
-                        <td>{{ $events->time }}</td>
+                        <td>{{ $event->location }}</td>
 
-                        <td>{{ $events->fee }}</td>
-
-                        <td>{{ $events->location }}</td>
-
-                        <td>{{ $events->bring }}</td>
-
-                        <td>{{ $events->lecturer_name }}</td>
-
-                        <td>{{ $events->lecturer_phone }}</td>
-
-                        <td>{{ $events->lecturer_email }}</td>
-
+                        <td>{{ $event->lecturer_name }}</td>
 
                         <td>
-                            <img src="{{ asset('storage/events/'.$events->lecturer_img) }}" alt="{{ $events->lecturer_img }}" width="100px" height="100px">
-                        </td>
+                            <a class="btn btn-info btn-sm" href="{{ route('events.show', ['event' => $event->id]) }}">Show</a>
 
-                        <td>{{ $events->lecturer_description }}</td>
+                            <a class="btn btn-warning btn-sm" href="{{ route('events.edit', ['event' => $event->id]) }}">Edit</a>
 
-                        <td>
-                            <a class="btn btn-info btn-sm" href="{{ route('events.show', ['event' => $events->id]) }}">Show</a>
-
-                            <a class="btn btn-warning btn-sm" href="{{ route('events.edit', ['event' => $events->id]) }}">Edit</a>
-
-                            <form style="display:inline" action="{{ route('events.destroy', ['event' => $events->id]) }}" method="post">
+                            <form style="display:inline" action="{{ route('events.destroy', ['event' => $event->id]) }}" method="post">
                                 @csrf
                                 @method('delete')
 

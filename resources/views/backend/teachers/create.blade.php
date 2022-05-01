@@ -31,7 +31,12 @@
                 <x-backend.form.textarea name="description" />
                 <x-backend.form.input name="email"/>
                 <x-backend.form.input name="phone"/>
+                <x-backend.form.input name="knowledge" type="number"/>
+                <x-backend.form.input name="experience" type="number"/>
+                <x-backend.form.input name="communication" type="number"/>
+                <x-backend.form.input name="leadership" type="number"/>
                 <x-backend.form.input name="img" type="file"/>
+                
                 
                 <x-backend.form.button>Save</x-backend.form.button>
             </form>

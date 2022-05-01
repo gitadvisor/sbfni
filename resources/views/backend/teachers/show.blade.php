@@ -25,6 +25,10 @@
                 <p>Description : <h3>{{$teacher->description }}</h3></p>
                 <p>Email : <h3>{{$teacher->email }}</h3></p>
                 <p>Phone : <h3>{{$teacher->phone }}</h3></p>
+                <p>Knowledge : <h3>{{$teacher->knowledge }}</h3></p>
+                <p>Experience : <h3>{{$teacher->experience }}</h3></p>
+                <p>Communication : <h3>{{$teacher->communication }}</h3></p>
+                <p>Leadership : <h3>{{$teacher->leadership }}</h3></p>
                 <p>Image : <h3>
                     <img src="{{ asset('storage/teachers/'.$teacher->img) }}" alt="{{$teacher->name }}" width="100px" height="100px">
                 </h3></p>      

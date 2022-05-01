@@ -30,6 +30,7 @@
     <div class="snackbars" id="form-output-global"></div> --}}
     <script src="{{ asset('ui/frontend/js/core.min.js') }}"></script>
     <script src="{{ asset('ui/frontend/js/script.js') }}"></script>
+
 </body>
 
 </html>

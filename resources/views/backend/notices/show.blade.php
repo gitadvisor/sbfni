@@ -19,15 +19,16 @@
            Notice Details <a class="btn btn-sm btn-info" href="{{ route('notices.index') }}">List</a>
         </div>
         <div class="card-body">
-            <h3>Title: {{ $notice->title }}</h3>
+            
+            <p>Title: {{ $notice->first()->title }}</p>
            
-            <p>Date: {{ $notice->date }}</p>
-            <p>PDF: <a href="{{ asset('storage/notices/'.$notice->pdf) }}" target="_blank">
+            <p>Date: {{ $notice->first()->date }}</p>
+            <p>PDF: <a href="{{ asset('storage/notices/'.$notice->first()->pdf) }}" target="_blank">
                 <i class="fas fa-file-pdf"></i> 
-                {{ $notice->pdf }}
+                {{ $notice->first()->pdf }}
             </a></p>
 
-             <p>Subject: {{ $notice->subject }}</p>
+             <p>Subject: {{ $notice->first()->subject }}</p>
         </div>
     </div>
 
